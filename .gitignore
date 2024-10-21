@@ -1,0 +1,42 @@
+# Python bytecode
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment
+env/
+venv/
+.venv/
+
+# FastAPI/Uvicorn logs
+*.log
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Python-specific packaging
+*.egg
+*.egg-info/
+dist/
+build/
+*.tar.gz
+*.zip
+
+# Ignore IDE specific files
+.vscode/
+.idea/
+
+# Environment variables
+.env
+
+# NLTK data
+corpora/
+tokenizers/
+
+# Ignore matplotlib cache
+.matplotlib/
