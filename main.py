@@ -81,6 +81,10 @@ class ChatRequest(BaseModel):
 class ChatResponse(BaseModel):
     response: dict
 
+@app.get('/')
+async def health_check():
+    return "This is Astra AI."
+
 @app.post("/api/talk", response_model=ChatResponse)
 async def talk(request: ChatRequest):
     ints = predict_class(request.message)
