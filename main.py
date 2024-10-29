@@ -16,16 +16,16 @@ app = FastAPI()
 
 lemmatizer = WordNetLemmatizer()
 
-with open("../astra/dataset.json") as file:
+with open("./astra/dataset.json") as file:
     intents = json.load(file)
 
-with open("../astra/words.pkl", "rb") as file:
+with open("./astra/words.pkl", "rb") as file:
     words = pickle.load(file)
 
-with open("../astra/classes.pkl", "rb") as file:
+with open("./astra/classes.pkl", "rb") as file:
     classes = pickle.load(file)
 
-chatbot_model = tf_models.load_model("../astra/astra.h5")
+chatbot_model = tf_models.load_model("./astra/astra.h5")
 
 def clean_up_sentence(sentence):
     # Splits the sentence into individual words
