@@ -9,8 +9,8 @@ from pydantic import BaseModel
 import tensorflow.keras.models as tf_models
 
 nltk.download('punkt')
-nltk.download('punkt_tab')
-nltk.download('wordnet')
+# nltk.download('punkt_tab')
+# nltk.download('wordnet')
 
 app = FastAPI()
 
